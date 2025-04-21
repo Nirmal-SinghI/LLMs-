@@ -1,0 +1,49 @@
+Training phase 1 is basically pretraining lays the groundwork for LLMs by processing extensive text data.
+It also develops the foundational understanding of language patterns, grammer and contextual relationships.
+During this phase, models learn to predict the next word in a sentence.
+It also acquiring a grasp of language structure and contect without task-specific fine-tuning.
+This stage also known as self-supervised learning sinc it does not require manually labeled data.
+
+Pre taining:  Training data ----> Training Process ------> Generative pre-trained model
+
+*USE OF VAST DATASETS*
+-LLMs require vast datasets during Phase 1 (Pretraining) to develop a deep and generalized understanding of human language.
+-They encompass diverse text sources, including books, websites, and articles, enabling models to understand various language patterns.
+-Contexts, substantially enhancing their generalization capabilities.
+-It reduces biases and errors by exposing the model to multiple viewpoints and sources.
+
+*Sources of Vast Datasets:
+i) Books and Literature
+ii) Websites and Online Articles
+iii) Conversation Data
+iv)  Code Reposistories
+
+*Several Preprocessing Steps:
+i)  Tokenization
+ii) Cleaning
+iii)Filtering
+iv) Chunking
+
+*TOKENIZATION*
+Before training begins, text data is converted into smaller units called tokens.
+  For example: 	"I love AI" → ["I", "love", "AI"]
+Tokenization methods include:
+(i)Word-based Tokenization – Splitting text into individual words.
+(ii)Subword Tokenization – Using techniques like Byte Pair Encoding (BPE) and SentencePiece to handle unknown words efficiently.
+(iii)Character-level Tokenization – Breaking text into individual characters (used in specialized cases).
+
+
+*CLEANING*
+Removing unnecessary or harmful parts of the text such as: HTML tags, Special characters, Duplicates, Extremely short or long sentences, Offensive or irrelevant content
+Reason for cleaning is to Improves data quality and reduces noise in training.
+
+*FILTERING*
+It is a process of Selecting only the most relevant and high-quality data based on specific rules.
+This is done to: (i) Prevent the model from learning from low-quality, biased, or repetitive content.
+                (ii) Ensures balance and diversity in topics, languages, and styles
+
+*CHUNKING*
+It is process of Breaking large documents into smaller, manageable pieces (chunks).
+The reason to done these:(i) As LLMs can only process limited token lengths at a time (e.g., 2,000–32,000 tokens).
+                        (ii) It makes training more efficient and enables handling long texts.
+
